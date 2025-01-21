@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-01-21T07:15:08.819Z",
+    "end": "2025-01-21T07:16:30.594Z",
+    "duration": 81775
+  },
+  "results": [
+    {
+      "uuid": "18ccc544-edba-4032-b06d-87b9a8638164",
+      "title": "",
+      "fullFile": "cypress/integration/joola/Start.js",
+      "file": "cypress/integration/joola/Start.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4329395-b262-4e9f-90b7-3e36fe234b75",
+          "title": "First test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login to CMS",
+              "fullTitle": "First test login to CMS",
+              "timedOut": null,
+              "duration": 7839,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const homepage = new _HomePage.default();\ncy.visit(Cypress.env('url'));\nhomepage.getLoginpageTitle().should('have.text', this.data.title);\nhomepage.getEmailfield().type(this.data.email);\nhomepage.Passwordfield().type(this.data.password);\nhomepage.SignInButton().click();",
+              "err": {},
+              "uuid": "434b515c-6a0a-4fe4-9c73-601651a83c8b",
+              "parentUUID": "f4329395-b262-4e9f-90b7-3e36fe234b75",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "434b515c-6a0a-4fe4-9c73-601651a83c8b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7839,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "905ef174-2eaa-4b90-8d2b-66e18b0ca104",
+      "title": "",
+      "fullFile": "cypress/integration/joola/Start.js",
+      "file": "cypress/integration/joola/Start.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2ce4b8e2-7e77-439a-92bd-bae7c01c8960",
+          "title": "First test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login to CMS",
+              "fullTitle": "First test login to CMS",
+              "timedOut": null,
+              "duration": 7315,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const homepage = new _HomePage.default();\ncy.visit(Cypress.env('url'));\nhomepage.getLoginpageTitle().should('have.text', this.data.title);\nhomepage.getEmailfield().type(this.data.email);\nhomepage.Passwordfield().type(this.data.password);\nhomepage.SignInButton().click();",
+              "err": {},
+              "uuid": "072378e3-bd1d-433d-aaf5-94c01156f8f9",
+              "parentUUID": "2ce4b8e2-7e77-439a-92bd-bae7c01c8960",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "072378e3-bd1d-433d-aaf5-94c01156f8f9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7315,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

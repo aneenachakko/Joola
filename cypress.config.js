@@ -12,4 +12,14 @@ module.exports = defineConfig({
     },
     specPattern: 'cypress/integration/joola/*.js'
   },
+  
+    reporter: "mochawesome",
+    reporterOptions: {
+      reportDir: './cypress/reports',
+      overwrite: true,
+      html: true,
+      json: true
+    }
+  
+  
 });
